@@ -1,5 +1,4 @@
-﻿using Asp.Versioning;
-using Web.Api.Infrastructure;
+﻿using Web.Api.Infrastructure;
 
 namespace Web.Api;
 
@@ -10,12 +9,7 @@ public static class DependencyInjection
         services.AddEndpointsApiExplorer();
         services.AddSwaggerGen();
 
-        services.AddApiVersioning(options =>
-        {
-            options.ReportApiVersions = true;
-            options.AssumeDefaultVersionWhenUnspecified = true;
-            options.DefaultApiVersion = new ApiVersion(1, 0);
-        });
+        // REMARK: If you want to use Controllers, you'll need this.
         services.AddControllers();
 
         services.AddExceptionHandler<GlobalExceptionHandler>();

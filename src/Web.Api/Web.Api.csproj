@@ -1,16 +1,13 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
-  
 
   <PropertyGroup>
-    <UserSecretsId>300a8bdb-9d89-4b47-bac9-62679c0b444e</UserSecretsId>
+    <UserSecretsId>7af30323-108a-4923-bd46-e13b7648968c</UserSecretsId>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     <DockerfileContext>..\..</DockerfileContext>
     <DockerComposeProjectPath>..\..\docker-compose.dcproj</DockerComposeProjectPath>
   </PropertyGroup>
-  
 
   <ItemGroup>
-    <PackageReference Include="Asp.Versioning.Mvc" />
     <PackageReference Include="AspNetCore.HealthChecks.UI.Client" />
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools">
